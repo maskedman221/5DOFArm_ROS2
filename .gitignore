@@ -1,0 +1,28 @@
+# Build directories
+build/
+install/
+log/
+src/rosserial/
+src/my_cpp_pkg/
+# Development files
+*.pyc
+__pycache__/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# System files
+.DS_Store
+
+# Colcon artifacts
+*~
+
+# Documentation builds
+doc/_build/
+
+# Virtual environments
+venv/
+env/
