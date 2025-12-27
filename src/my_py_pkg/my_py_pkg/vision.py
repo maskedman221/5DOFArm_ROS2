@@ -6,14 +6,14 @@ class visionNode(Node):
     def __init__(self):
         super().__init__("vision")
         self.publisher = self.create_publisher(Point , '/target_position' , 10)
-        self.timer = self.create_timer(60 , self.publish_point)
+        self.timer = self.create_timer(15 , self.publish_point)
         self.get_logger().info("inite the Point")
     
     def publish_point(self):
         point = Point()
-        point.x=0.10
-        point.y=0.05
-        point.z=0.15
+        point.x=0.12
+        point.y=0.0
+        point.z=0.1
         self.publisher.publish(point)
     
 def main(args=None):

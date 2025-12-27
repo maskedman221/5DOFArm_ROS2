@@ -22,7 +22,8 @@ setup(
         'console_scripts': [
             "serial_node = my_py_pkg.serial_node:main",
             "vision = my_py_pkg.vision:main",
-            "ik_node = my_py_pkg.ik_node:main"
+            "ik_node = my_py_pkg.ik_node:main",
+            "camera_vision_node = my_py_pkg.camera_vision_node:main"
         ],
     },
 )
